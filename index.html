@@ -80,16 +80,28 @@
 </html>    allowfullscreen>
 </iframe>
 
-<p><small>📌 Transações e atividades em tempo real da wallet <strong>vulkan</strong></small></p>
-</head>
-<audio 
-    controls 
-    autoplay 
-    loop 
-    muted 
-    style="width: 100%; max-width: 600px;">
-    <source src="assets/music/Soulful Evening Echoes (Take 1).mp3" type="audio/mpeg">
-    Seu navegador não suporta o player de áudio.
-</audio>
+<!-- Player de Música Centralizado -->
+<div style="text-align: center; margin: 30px 0;">
+    <audio 
+        id="trilha"
+        controls 
+        autoplay 
+        loop 
+        muted 
+        style="width: 20%; min-width: 280px;">
+        <source src="assets/music/Soulful Evening Echoes (Take 1).mp3" type="audio/mpeg">
+        Seu navegador não suporta o player.
+    </audio>
+</div>
+
+<script>
+// Desmuta automaticamente após 3 segundos
+setTimeout(() => {
+    const audio = document.getElementById('trilha');
+    if (audio) {
+        audio.muted = false;
+    }
+}, 3000);
+</script>
 </body>
 </html>
