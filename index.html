@@ -21,8 +21,8 @@
         }
         h1 {
             color: #FFFFFF;           /* Branco como você pediu */
-            font-size: 2.8rem;
-            margin-bottom: 10px;
+            font-size: 2.9rem;
+            margin-bottom: 12px;
         }
         p {
             color: #E0F2FE;
@@ -37,6 +37,10 @@
             margin: 30px auto;
             display: block;
         }
+        .audio-player {
+            margin: 35px auto;
+            max-width: 620px;
+        }
         .construction {
             color: #94A3B8;
             font-size: 1.35rem;
@@ -49,7 +53,17 @@
         <h1>Portal da Transparência</h1>
         <p>Brazil NFT Official Collection</p>
         
-        <iframe src="https://explorer.contentos.io/#/user-relevant/vulkan" title="Contentos Explorer" allowfullscreen></iframe>
+        <!-- Explorer -->
+        <iframe src="https://explorer.contentos.io/" title="Contentos Explorer" allowfullscreen></iframe>
+        
+        <!-- Player Auto-hospedado -->
+        <div class="audio-player">
+            <h2>🎵 Casteler FM</h2>
+            <audio controls style="width: 100%;">
+                <source src="assets/SEU_ARQUIVO.mp3" type="audio/mpeg">
+                Seu navegador não suporta o player.
+            </audio>
+        </div>
         
         <p class="construction">🚧 Página em Construção - Em breve mais atualizações</p>
     </div>
