@@ -8,8 +8,8 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #0f172a;           /* Cor sólida escura baseada no Explorer */
-            color: #e2e8f0;
+            background-color: #0A2540;           /* Azul escuro forte da Contentos */
+            color: #FFFFFF;
             font-family: 'Segoe UI', Arial, sans-serif;
             text-align: center;
             line-height: 1.6;
@@ -17,25 +17,35 @@
         .container {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 30px 20px;
         }
         h1 {
-            color: #60a5fa;
-            margin-bottom: 10px;
+            color: #00D4FF;                      /* Azul ciano forte do Explorer */
+            font-size: 2.8rem;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+        p {
+            color: #E0F2FE;
+            font-size: 1.25rem;
+            margin: 10px 0;
+            text-align: center;
         }
         iframe {
             width: 100%;
-            max-width: 1000px;
-            height: 650px;
-            border: 1px solid #334155;
-            border-radius: 8px;
-            margin: 20px auto;
+            max-width: 1050px;
+            height: 680px;
+            border: none;
+            border-radius: 12px;
+            margin: 25px auto;
             display: block;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
         .construction {
-            color: #94a3b8;
-            font-size: 1.3rem;
-            margin-top: 30px;
+            color: #94A3B8;
+            font-size: 1.4rem;
+            margin-top: 35px;
+            text-align: center;
         }
     </style>
 </head>
@@ -48,75 +58,5 @@
         
         <p class="construction">🚧 Página em Construção - Em breve mais atualizações</p>
     </div>
-</body>
-</html>            border: 1px solid #00ccff;
-            border-radius: 12px;
-            background: white;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-        }
-        .info {
-            text-align: center;
-            margin: 20px 0;
-            font-size: 1.1em;
-        }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 0.9em;
-            opacity: 0.8;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>🇧🇷 Brazil NFT Official Collection</h1>
-        <h2>Portal da Transparência</h2>
-        
-        <div class="info">
-            <strong>Wallet Oficial:</strong> vulkan<br>
-            <small>Transparência total das operações da coleção</small>
-        </div>
-
-        <h2>🔍 Explorer Contentos - Atividades em Tempo Real</h2>
-        <iframe 
-            src="https://explorer.contentos.io/#/user-relevant/vulkan" 
-            allowfullscreen>
-        </iframe>
-
-        <p style="text-align: center; margin-top: 15px;">
-            <small>📌 Todas as transações, mints e movimentações da wallet oficial estão disponíveis aqui.</small>
-        </p>
-
-        <footer>
-            Brazil NFT Official Collection © 2026 • Transparência é nosso compromisso
-        </footer>
-    </div>
-</body>
-</html>    allowfullscreen>
-</iframe>
-
-<!-- Player de Música Centralizado -->
-<div style="text-align: center; margin: 30px 0;">
-    <audio 
-        id="trilha"
-        controls 
-        autoplay 
-        loop 
-        muted 
-        style="width: 20%; min-width: 280px;">
-        <source src="assets/music/Soulful Evening Echoes (Take 1).mp3" type="audio/mpeg">
-        Seu navegador não suporta o player.
-    </audio>
-</div>
-
-<script>
-// Desmuta automaticamente após 3 segundos
-setTimeout(() => {
-    const audio = document.getElementById('trilha');
-    if (audio) {
-        audio.muted = false;
-    }
-}, 3000);
-</script>
 </body>
 </html>
