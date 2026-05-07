@@ -12,14 +12,10 @@
             --primary: #00ff9d;
             --dark: #0A2540;
         }
-        * { 
-            margin: 0; 
-            padding: 0; 
-            box-sizing: border-box; 
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             background-color: var(--dark);
-            color: #ffffff !important;
+            color: #ffffff;
             font-family: 'Segoe UI', system-ui, sans-serif;
         }
         header {
@@ -53,11 +49,10 @@
             text-align: center;
             font-size: 3rem;
             margin: 2.5rem 0 0.5rem;
-            color: #ffffff !important;
         }
         .subtitle {
             text-align: center;
-            color: #ffffff !important;
+            color: #ffffff;
             font-size: 1.5rem;
             margin-bottom: 2rem;
         }
@@ -70,7 +65,7 @@
             flex-wrap: wrap;
         }
         .secondary-menu a {
-            color: #ffffff !important;
+            color: #ffffff;
             text-decoration: none;
             font-weight: 500;
             padding: 10px 24px;
@@ -80,10 +75,9 @@
         .secondary-menu a:hover,
         .secondary-menu a.active {
             background: rgba(0, 255, 157, 0.2);
-            color: #ffffff !important;
+            color: #ffffff;
         }
 
-        /* Iframe Explorer - Versão otimizada para mobile */
         .explorer-wrapper {
             width: 100%;
             max-width: 1100px;
@@ -91,7 +85,6 @@
             border-radius: 16px;
             overflow: hidden;
             box-shadow: 0 15px 35px rgba(0, 255, 157, 0.15);
-            border: 1px solid rgba(0, 255, 157, 0.2);
         }
         .explorer-wrapper iframe {
             width: 100%;
@@ -105,7 +98,7 @@
             .secondary-menu { gap: 1rem; }
             .secondary-menu a { padding: 9px 18px; font-size: 0.95rem; }
             .explorer-wrapper iframe { 
-                height: 620px; 
+                height: 680px;   /* Altura maior no celular */
             }
         }
     </style>
@@ -129,8 +122,8 @@
         <div class="explorer-wrapper">
             <iframe src="https://explorer.contentos.io/#/user-relevant/vulkan" 
                     allowfullscreen 
-                    title="Contentos Explorer - Vulkan"
-                    scrolling="yes"></iframe>
+                    scrolling="yes"
+                    title="Contentos Explorer"></iframe>
         </div>
     </div>
 </body>
