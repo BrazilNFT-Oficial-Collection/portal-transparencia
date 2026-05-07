@@ -11,7 +11,6 @@
         :root {
             --primary: #00ff9d;
             --dark: #0A2540;
-            --gray: #112B4A;
         }
         * { 
             margin: 0; 
@@ -22,7 +21,6 @@
             background-color: var(--dark);
             color: #ffffff !important;
             font-family: 'Segoe UI', system-ui, sans-serif;
-            line-height: 1.6;
         }
         header {
             background: rgba(10, 37, 64, 0.98);
@@ -43,7 +41,7 @@
         .logo {
             font-size: 1.85rem;
             font-weight: bold;
-            color: #ffffff;   /* Branco */
+            color: #ffffff;
         }
 
         .container {
@@ -59,7 +57,7 @@
         }
         .subtitle {
             text-align: center;
-            color: #ffffff !important;   /* Branco */
+            color: #ffffff !important;
             font-size: 1.5rem;
             margin-bottom: 2rem;
         }
@@ -85,15 +83,25 @@
             color: #ffffff !important;
         }
 
-        iframe {
+        /* Container Responsivo do Explorer */
+        .iframe-container {
+            position: relative;
             width: 100%;
             max-width: 1100px;
-            height: 680px;
-            border: none;
-            border-radius: 16px;
             margin: 1.5rem auto;
-            display: block;
+            padding-bottom: 65%;           /* Proporção ajustada */
+            height: 0;
+            overflow: hidden;
+            border-radius: 16px;
             box-shadow: 0 15px 35px rgba(0, 255, 157, 0.15);
+        }
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
         }
 
         @media (max-width: 768px) {
@@ -101,7 +109,7 @@
             .subtitle { font-size: 1.3rem; }
             .secondary-menu { gap: 1.2rem; }
             .secondary-menu a { padding: 9px 18px; font-size: 0.95rem; }
-            iframe { height: 520px; }
+            .iframe-container { padding-bottom: 90%; }   /* Mais alto no mobile */
         }
     </style>
 </head>
@@ -121,10 +129,12 @@
             <a href="roadmap.html">Roadmap</a>
         </div>
 
-        <!-- Explorer -->
-        <iframe src="https://explorer.contentos.io/#/user-relevant/vulkan" 
-                allowfullscreen 
-                title="Contentos Explorer - Vulkan"></iframe>
+        <!-- Explorer Responsivo -->
+        <div class="iframe-container">
+            <iframe src="https://explorer.contentos.io/#/user-relevant/vulkan" 
+                    allowfullscreen 
+                    title="Contentos Explorer - Vulkan"></iframe>
+        </div>
     </div>
 </body>
 </html>
