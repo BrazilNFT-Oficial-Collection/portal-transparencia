@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal da Transparência - Brazil NFT Official Collection</title>
     
-    <!-- FAVICON -->
     <link rel="icon" href="https://github.com/BrazilNFT-Oficial-Collection.png" type="image/png">
-    <!-- Se você tiver um favicon próprio na pasta assets, use: -->
-    <!-- <link rel="icon" href="assets/favicon.ico" type="image/x-icon"> -->
 
     <style>
         :root {
@@ -21,8 +18,8 @@
             background-color: var(--dark);
             color: #fff;
             font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
         }
-
         header {
             background: rgba(10, 37, 64, 0.98);
             backdrop-filter: blur(12px);
@@ -43,28 +40,71 @@
             font-size: 1.85rem;
             font-weight: bold;
             color: var(--primary);
-            display: flex;
-            align-items: center;
-            gap: 12px;
         }
-        .menu {
-            display: flex;
-            gap: 2.5rem;
-            list-style: none;
-        }
-        .menu a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        .menu a:hover {
-            color: var(--primary);
-        }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
+        }
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin: 2.5rem 0 0.5rem;
+        }
+        .subtitle {
+            text-align: center;
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Menu secundário abaixo do título */
+        .secondary-menu {
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            margin: 2rem 0 3rem;
+            flex-wrap: wrap;
+        }
+        .secondary-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 50px;
+            transition: all 0.3s;
+        }
+        .secondary-menu a:hover,
+        .secondary-menu a.active {
+            background: rgba(0, 255, 157, 0.15);
+            color: var(--primary);
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 1100px;
+            height: 700px;
+            border: none;
+            border-radius: 16px;
+            margin: 1.5rem auto;
+            display: block;
+            box-shadow: 0 15px 35px rgba(0, 255, 157, 0.15);
+        }
+
+        .audio-player {
+            text-align: center;
+            margin: 3rem 0;
+            background: var(--gray);
+            padding: 25px;
+            border-radius: 16px;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.4rem; }
+            .secondary-menu { gap: 1rem; }
+            .secondary-menu a { padding: 8px 16px; font-size: 0.95rem; }
+            iframe { height: 520px; }
         }
     </style>
 </head>
@@ -72,21 +112,32 @@
     <header>
         <nav>
             <div class="logo">🇧🇷 Brazil NFT</div>
-            
-            <ul class="menu">
-                <li><a href="index.html">Transparência</a></li>
-                <li><a href="roadmap.html">Roadmap</a></li>
-                <!-- Adicione mais links aqui depois -->
-            </ul>
         </nav>
     </header>
 
     <div class="container">
-        <!-- Conteúdo da página Transparência vai aqui -->
-        <h1 style="text-align:center; margin: 3rem 0 1rem;">Portal da Transparência</h1>
-        <p style="text-align:center; color: var(--primary); font-size: 1.4rem;">Brazil NFT Official Collection</p>
-        
-        <!-- Seu iframe e player ficam aqui embaixo -->
+        <h1>Portal da Transparência</h1>
+        <p class="subtitle">Brazil NFT Official Collection</p>
+
+        <!-- Menu abaixo do título -->
+        <div class="secondary-menu">
+            <a href="index.html" class="active">Transparência</a>
+            <a href="roadmap.html">Roadmap</a>
+        </div>
+
+        <!-- Explorer Responsivo -->
+        <iframe src="https://explorer.contentos.io/#/user-relevant/vulkan" 
+                allowfullscreen 
+                title="Contentos Explorer - Vulkan"></iframe>
+
+        <!-- Player de Música -->
+        <div class="audio-player">
+            <h2>🎵 Casteler FM</h2>
+            <audio controls style="width: 100%; max-width: 600px;">
+                <source src="assets/music/lady.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </div>
     </div>
 </body>
 </html>
