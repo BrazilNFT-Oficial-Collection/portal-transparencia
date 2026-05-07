@@ -92,14 +92,40 @@
             border: none;
         }
 
+        /* === FOOTER === */
+        footer {
+            background: #081f33;
+            padding: 3rem 2rem 2rem;
+            margin-top: 4rem;
+            border-top: 1px solid rgba(0, 255, 157, 0.2);
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .social-icons a {
+            color: #ffffff;
+            font-size: 1.8rem;
+            transition: all 0.3s;
+        }
+        .social-icons a:hover {
+            color: var(--primary);
+            transform: translateY(-5px);
+        }
+        .footer-text {
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+
         @media (max-width: 768px) {
             h1 { font-size: 2.4rem; }
             .subtitle { font-size: 1.3rem; }
             .secondary-menu { gap: 1rem; }
             .secondary-menu a { padding: 9px 18px; font-size: 0.95rem; }
-            .explorer-wrapper iframe { 
-                height: 680px;   /* Altura maior no celular */
-            }
+            .explorer-wrapper iframe { height: 680px; }
         }
     </style>
 </head>
@@ -126,5 +152,22 @@
                     title="Contentos Explorer"></iframe>
         </div>
     </div>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="social-icons">
+            <!-- === COLE OS LINKS AQUI === -->
+            <a href="https://twitter.com/" target="_blank" title="Twitter/X">𝕏</a>
+            <a href="https://discord.com/" target="_blank" title="Discord">💬</a>
+            <a href="https://t.me/" target="_blank" title="Telegram">📱</a>
+            <a href="https://instagram.com/" target="_blank" title="Instagram">📷</a>
+            <a href="https://opensea.io/" target="_blank" title="OpenSea">🌊</a>
+        </div>
+        
+        <div class="footer-text">
+            <p>&copy; 2026 Brazil NFT Official Collection • Todos os direitos reservados</p>
+            <p>Transparência é o nosso compromisso com a comunidade.</p>
+        </div>
+    </footer>
 </body>
 </html>
