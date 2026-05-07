@@ -13,10 +13,14 @@
             --dark: #0A2540;
             --gray: #112B4A;
         }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
         body {
             background-color: var(--dark);
-            color: #fff;
+            color: #ffffff !important;
             font-family: 'Segoe UI', system-ui, sans-serif;
             line-height: 1.6;
         }
@@ -39,23 +43,8 @@
         .logo {
             font-size: 1.85rem;
             font-weight: bold;
-            color: var(--primary);
-            display: flex;
-            align-items: center;
-            gap: 12px;
+            color: #ffffff;
         }
-        .menu {
-            display: flex;
-            gap: 2.5rem;
-            list-style: none;
-        }
-        .menu a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        .menu a:hover { color: var(--primary); }
 
         .container {
             max-width: 1200px;
@@ -64,10 +53,33 @@
         }
         h1 {
             text-align: center;
-            margin: 3rem 0 2.5rem;
-            color: var(--primary);
             font-size: 3rem;
+            margin: 3rem 0 2.5rem;
+            color: #ffffff !important;
         }
+
+        /* Menu limpo */
+        .secondary-menu {
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            margin: 2rem 0 3rem;
+            flex-wrap: wrap;
+        }
+        .secondary-menu a {
+            color: #ffffff !important;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 24px;
+            border-radius: 50px;
+            transition: all 0.3s;
+        }
+        .secondary-menu a:hover,
+        .secondary-menu a.active {
+            background: rgba(0, 255, 157, 0.2);
+            color: #ffffff !important;
+        }
+
         .pdf-container {
             background: var(--gray);
             padding: 20px;
@@ -81,14 +93,12 @@
             border: none;
             border-radius: 12px;
         }
-        .download {
-            text-align: center;
-            margin-top: 25px;
-            font-size: 1.1rem;
-        }
+
         @media (max-width: 768px) {
+            h1 { font-size: 2.4rem; }
+            .secondary-menu { gap: 1rem; }
+            .secondary-menu a { padding: 9px 18px; font-size: 0.95rem; }
             iframe { height: 680px; }
-            .menu { gap: 1.5rem; }
         }
     </style>
 </head>
@@ -96,25 +106,27 @@
     <header>
         <nav>
             <div class="logo">🇧🇷 Brazil NFT</div>
-            <ul class="menu">
-                <li><a href="index.html">🏠 Transparência</a></li>
-                <li><a href="roadmap.html">📍 Roadmap</a></li>
-            </ul>
         </nav>
     </header>
 
     <div class="container">
         <h1>Roadmap 2026</h1>
-        
+
+        <!-- Menu -->
+        <div class="secondary-menu">
+            <a href="index.html">Transparência</a>
+            <a href="roadmap.html" class="active">Roadmap</a>
+        </div>
+
         <div class="pdf-container">
             <iframe src="roadmap.pdf" title="Roadmap Brazil NFT"></iframe>
         </div>
-        
-        <div class="download">
-            📄 <a href="roadmap.pdf" target="_blank" style="color: var(--primary); font-weight: bold;">
-                Baixar Roadmap em PDF
+
+        <p style="text-align: center; margin-top: 20px;">
+            <a href="roadmap.pdf" target="_blank" style="color: var(--primary); font-weight: bold;">
+                📥 Baixar Roadmap em PDF
             </a>
-        </div>
+        </p>
     </div>
 </body>
 </html>
