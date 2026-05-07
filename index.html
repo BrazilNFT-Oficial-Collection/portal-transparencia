@@ -13,10 +13,14 @@
             --dark: #0A2540;
             --gray: #112B4A;
         }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
         body {
             background-color: var(--dark);
-            color: #ffffff;           /* Branco */
+            color: #ffffff !important;   /* Branco forçado */
             font-family: 'Segoe UI', system-ui, sans-serif;
             line-height: 1.6;
         }
@@ -51,7 +55,7 @@
             text-align: center;
             font-size: 3rem;
             margin: 2.5rem 0 0.5rem;
-            color: #ffffff;
+            color: #ffffff !important;
         }
         .subtitle {
             text-align: center;
@@ -68,7 +72,7 @@
             flex-wrap: wrap;
         }
         .secondary-menu a {
-            color: #ffffff;           /* Branco */
+            color: #ffffff !important;
             text-decoration: none;
             font-weight: 500;
             padding: 10px 24px;
@@ -77,8 +81,8 @@
         }
         .secondary-menu a:hover,
         .secondary-menu a.active {
-            background: rgba(0, 255, 157, 0.15);
-            color: var(--primary);
+            background: rgba(0, 255, 157, 0.2);
+            color: var(--primary) !important;
         }
 
         iframe {
@@ -98,10 +102,10 @@
             background: var(--gray);
             padding: 30px;
             border-radius: 16px;
-            color: #ffffff;           /* Branco */
+            color: #ffffff !important;
         }
         .audio-player h2 {
-            color: #ffffff;
+            color: #ffffff !important;
             margin-bottom: 15px;
         }
 
