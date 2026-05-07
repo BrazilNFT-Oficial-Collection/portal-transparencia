@@ -100,6 +100,41 @@
             .secondary-menu a { padding: 9px 18px; font-size: 0.95rem; }
             iframe { height: 680px; }
         }
+                /* FOOTER - Branco com textos menores */
+        footer {
+            background: #ffffff !important;
+            padding: 3rem 2rem 2rem;
+            margin-top: 4rem;
+            border-top: 1px solid rgba(0, 255, 157, 0.3);
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 2.2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        .social-icons a {
+            transition: all 0.3s;
+        }
+        .social-icons img {
+            width: 52px;
+            height: 52px;
+            object-fit: contain;
+        }
+        .social-icons a:hover img {
+            transform: translateY(-6px);
+            filter: brightness(1.3);
+        }
+        .footer-text {
+            text-align: center;
+            color: #0A2540;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+        .footer-text p {
+            margin-bottom: 0.4rem;
+        }
     </style>
 </head>
 <body>
@@ -128,5 +163,27 @@
             </a>
         </p>
     </div>
+        <!-- RODAPÉ -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.binance.com/pt-BR/square/profile/cos_investidores" target="_blank" title="Binance Square">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Binance-BNB-Icon-Logo.wine.svg" alt="Binance Square">
+            </a>
+            <a href="https://x.com/BrazilPfp" target="_blank" title="X / Twitter">
+                <span style="font-size: 2.4rem;">𝕏</span>
+            </a>
+            <a href="https://cos.tv/channel-vip/room/172133888776684" target="_blank" title="Sala Vip COStv">
+                <img src="assets/salavip.png" alt="Sala Vip COStv">
+            </a>
+            <a href="https://cos.tv/channel/51060419739952128/" target="_blank" title="Canal Oficial COStv">
+                <img src="https://play-lh.googleusercontent.com/w-YarljHAryHAiqPlND6cwr5dtLw1tUdB8cg_7Vo05iM9WTkyx-oVL4hw_2xeSFor6Q" alt="Canal Oficial COStv">
+            </a>
+        </div>
+       
+        <div class="footer-text">
+            <p>&copy; 2026 Brazil NFT Official Collection • Todos os direitos reservados</p>
+            <p>Transparência é o nosso compromisso com a comunidade.</p>
+        </div>
+    </footer>
 </body>
 </html>
