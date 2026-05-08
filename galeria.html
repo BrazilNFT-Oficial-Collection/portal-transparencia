@@ -1,1 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria da Coleção - Brazil NFT Official Collection</title>
+ 
+    <link rel="icon" href="https://github.com/BrazilNFT-Oficial-Collection.png" type="image/png">
+    <style>
+        :root {
+            --primary: #00ff9d;
+            --dark: #0A2540;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: var(--dark);
+            color: #ffffff;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+        header {
+            background: rgba(10, 37, 64, 0.98);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(0, 255, 157, 0.25);
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.85rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin: 2.5rem 0 0.5rem;
+        }
+        .subtitle {
+            text-align: center;
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+        }
 
+        .secondary-menu {
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            margin: 2rem 0 3rem;
+            flex-wrap: wrap;
+        }
+        .secondary-menu a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 24px;
+            border-radius: 50px;
+            transition: all 0.3s;
+        }
+        .secondary-menu a:hover,
+        .secondary-menu a.active {
+            background: rgba(0, 255, 157, 0.2);
+            color: #ffffff;
+        }
+
+        /* Grid da Galeria */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+            padding: 1rem 0;
+        }
+        .nft-card {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0, 255, 157, 0.15);
+        }
+        .nft-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 35px rgba(0, 255, 157, 0.25);
+            border-color: var(--primary);
+        }
+        .nft-card img {
+            width: 100%;
+            height: 260px;
+            object-fit: contain; /* Melhor para SVGs */
+            background: #0f2a4a;
+            padding: 15px;
+        }
+        .nft-info {
+            padding: 1.2rem;
+            text-align: center;
+        }
+        .nft-info h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+        }
+        .nft-info p {
+            font-size: 0.9rem;
+            color: #00ff9d;
+        }
+
+        footer {
+            background: #ffffff !important;
+            color: #0A2540;
+            padding: 3rem 2rem 2rem;
+            margin-top: 5rem;
+            border-top: 1px solid rgba(0, 255, 157, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🇧🇷 Brazil NFT</div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Galeria da Coleção</h1>
+        <p class="subtitle">NFTs já adquiridos • Brazil NFT Official Collection</p>
+
+        <div class="secondary-menu">
+            <a href="index.html">Transparência</a>
+            <a href="roadmap.html">Roadmap</a>
+            <a href="galeria.html" class="active">Galeria</a>
+        </div>
+
+        <div class="gallery-grid">
+            
+            <!-- NFT 1 -->
+            <div class="nft-card">
+                <img src="https://raw2.seadn.io/ethereum/0x06012c8cf97bead5deae237070f9587f8e7a266d/c96aa90cb0d107afb71193ed431b99/e8c96aa90cb0d107afb71193ed431b99.svg" alt="NFT 1">
+                <div class="nft-info">
+                    <h3>CryptoKitty #001</h3>
+                    <p>Adquirido em: 08/05/2026</p>
+                </div>
+            </div>
+
+            <!-- NFT 2 -->
+            <div class="nft-card">
+                <img src="https://raw2.seadn.io/ethereum/0x06012c8cf97bead5deae237070f9587f8e7a266d/42bcc80005980c79dfff9ab6a44744/7f42bcc80005980c79dfff9ab6a44744.svg" alt="NFT 2">
+                <div class="nft-info">
+                    <h3>CryptoKitty #002</h3>
+                    <p>Adquirido em: 07/05/2026</p>
+                </div>
+            </div>
+
+            <!-- NFT 3 -->
+            <div class="nft-card">
+                <img src="https://public.nftstatic.com/static/nft/res/fd401ced734341a2bcd6e7e342b213be.jpeg" alt="Certificado DeFi">
+                <div class="nft-info">
+                    <h3>Certificado DeFi Binance Academy</h3>
+                    <p>Adquirido em: 05/05/2026</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-icons" style="display: flex; justify-content: center; gap: 2.2rem; margin-bottom: 2.5rem; flex-wrap: wrap;">
+            <a href="https://www.binance.com/pt-BR/square/profile/cos_investidores" target="_blank" title="Binance Square">
+                <img src="assets/Bsquare.png" alt="Binance Square">
+            </a>
+            <a href="https://x.com/BrazilPfp" target="_blank" title="X / Twitter">
+                <span style="font-size: 2.4rem;">𝕏</span>
+            </a>
+            <a href="https://github.com/BrazilNFT-Oficial-Collection" target="_blank" title="Github">
+                <img src="assets/git.png" alt="Perfil Github">
+            </a>
+            <a href="https://cos.tv/channel-vip/room/172133888776684" target="_blank" title="Sala Vip COStv">
+                <img src="assets/salavip.png" alt="Sala Vip COStv">
+            </a>
+            <a href="https://cos.tv/channel/51060419739952128/" target="_blank" title="Canal Oficial COStv">
+                <img src="assets/costve.png" alt="Canal COStv">
+            </a>
+        </div>
+
+        <div class="certificates" style="text-align: left; max-width: 800px; margin: 2rem auto 2.5rem;">
+            <h3 style="font-size: 1rem; margin-bottom: 0.9rem;">✅ Certificado Oficial - Curso DeFi Binance Academy</h3>
+            <img src="https://public.nftstatic.com/static/nft/res/fd401ced734341a2bcd6e7e342b213be.jpeg"
+                 alt="Certificado NFT Curso DeFi Binance"
+                 style="max-width: 200px; border-radius: 10px; border: 3px solid #00ff9d;">
+        </div>
+
+        <div class="footer-text" style="text-align: center; font-size: 0.78rem;">
+            <p>&copy; 2026 Brazil NFT Official Collection • Todos os direitos reservados</p>
+            <p>Transparência é o nosso compromisso com a comunidade.</p>
+        </div>
+    </footer>
+</body>
+</html>
