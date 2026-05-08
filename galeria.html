@@ -98,7 +98,7 @@
         .nft-card img {
             width: 100%;
             height: 260px;
-            object-fit: contain; /* Melhor para SVGs */
+            object-fit: contain;
             background: #0f2a4a;
             padding: 15px;
         }
@@ -115,12 +115,59 @@
             color: #00ff9d;
         }
 
+        /* Footer */
         footer {
             background: #ffffff !important;
             color: #0A2540;
             padding: 3rem 2rem 2rem;
             margin-top: 5rem;
             border-top: 1px solid rgba(0, 255, 157, 0.3);
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 2.2rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+        .social-icons img {
+            width: 52px;
+            height: 52px;
+            object-fit: contain;
+        }
+        .social-icons a:hover img {
+            transform: translateY(-6px);
+            filter: brightness(1.3);
+        }
+        .certificates {
+            text-align: left;
+            max-width: 800px;
+            margin: 2rem auto 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+        }
+        .certificates h3 {
+            font-size: 1rem;
+            margin-bottom: 0.9rem;
+            color: #0A2540;
+        }
+        .certificate-img {
+            max-width: 200px;
+            border-radius: 10px;
+            border: 3px solid #00ff9d;
+        }
+        .footer-text {
+            text-align: center;
+            color: #0A2540;
+            font-size: 0.78rem;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.4rem; }
+            .subtitle { font-size: 1.3rem; }
+            .gallery-grid { gap: 1.5rem; }
+            .nft-card img { height: 220px; }
         }
     </style>
 </head>
@@ -142,10 +189,9 @@
         </div>
 
         <div class="gallery-grid">
-            
             <!-- NFT 1 -->
             <div class="nft-card">
-                <img src="https://raw2.seadn.io/ethereum/0x06012c8cf97bead5deae237070f9587f8e7a266d/c96aa90cb0d107afb71193ed431b99/e8c96aa90cb0d107afb71193ed431b99.svg" alt="NFT 1">
+                <img src="https://raw2.seadn.io/ethereum/0x06012c8cf97bead5deae237070f9587f8e7a266d/c96aa90cb0d107afb71193ed431b99/e8c96aa90cb0d107afb71193ed431b99.svg" alt="CryptoKitty 1">
                 <div class="nft-info">
                     <h3>CryptoKitty #001</h3>
                     <p>Adquirido em: 08/05/2026</p>
@@ -154,7 +200,7 @@
 
             <!-- NFT 2 -->
             <div class="nft-card">
-                <img src="https://raw2.seadn.io/ethereum/0x06012c8cf97bead5deae237070f9587f8e7a266d/42bcc80005980c79dfff9ab6a44744/7f42bcc80005980c79dfff9ab6a44744.svg" alt="NFT 2">
+                <img src="https://raw2.seadn.io/ethereum/0x06012c8cf97bead5deae237070f9587f8e7a266d/42bcc80005980c79dfff9ab6a44744/7f42bcc80005980c79dfff9ab6a44744.svg" alt="CryptoKitty 2">
                 <div class="nft-info">
                     <h3>CryptoKitty #002</h3>
                     <p>Adquirido em: 07/05/2026</p>
@@ -165,17 +211,16 @@
             <div class="nft-card">
                 <img src="https://public.nftstatic.com/static/nft/res/fd401ced734341a2bcd6e7e342b213be.jpeg" alt="Certificado DeFi">
                 <div class="nft-info">
-                    <h3>Certificado DeFi Binance Academy</h3>
+                    <h3>Certificado DeFi Binance</h3>
                     <p>Adquirido em: 05/05/2026</p>
                 </div>
             </div>
-
         </div>
     </div>
 
-    <!-- Footer -->
+    <!-- RODAPÉ -->
     <footer>
-        <div class="social-icons" style="display: flex; justify-content: center; gap: 2.2rem; margin-bottom: 2.5rem; flex-wrap: wrap;">
+        <div class="social-icons">
             <a href="https://www.binance.com/pt-BR/square/profile/cos_investidores" target="_blank" title="Binance Square">
                 <img src="assets/Bsquare.png" alt="Binance Square">
             </a>
@@ -193,14 +238,14 @@
             </a>
         </div>
 
-        <div class="certificates" style="text-align: left; max-width: 800px; margin: 2rem auto 2.5rem;">
-            <h3 style="font-size: 1rem; margin-bottom: 0.9rem;">✅ Certificado Oficial - Curso DeFi Binance Academy</h3>
+        <div class="certificates">
+            <h3>✅ Certificado Oficial - Curso DeFi Binance Academy</h3>
             <img src="https://public.nftstatic.com/static/nft/res/fd401ced734341a2bcd6e7e342b213be.jpeg"
                  alt="Certificado NFT Curso DeFi Binance"
-                 style="max-width: 200px; border-radius: 10px; border: 3px solid #00ff9d;">
+                 class="certificate-img">
         </div>
 
-        <div class="footer-text" style="text-align: center; font-size: 0.78rem;">
+        <div class="footer-text">
             <p>&copy; 2026 Brazil NFT Official Collection • Todos os direitos reservados</p>
             <p>Transparência é o nosso compromisso com a comunidade.</p>
         </div>
