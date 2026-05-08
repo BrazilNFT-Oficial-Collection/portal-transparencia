@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal da Transparência - Brazil NFT Official Collection</title>
-  
+ 
     <link rel="icon" href="https://github.com/BrazilNFT-Oficial-Collection.png" type="image/png">
     <style>
         :root {
@@ -100,7 +100,7 @@
             display: flex;
             justify-content: center;
             gap: 2.2rem;
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
             flex-wrap: wrap;
         }
         .social-icons a {
@@ -116,40 +116,41 @@
             filter: brightness(1.3);
         }
 
-        /* Seção do Certificado */
+        /* Seção do Certificado - Alinhado à esquerda */
         .certificates {
-            text-align: center;
-            margin: 2.5rem 0;
+            text-align: left;
+            max-width: 800px;
+            margin: 2rem auto 2.5rem;
             padding-top: 1.5rem;
             border-top: 1px solid rgba(0, 0, 0, 0.08);
         }
         .certificates h3 {
-            font-size: 1.15rem;
-            margin-bottom: 1.1rem;
+            font-size: 1rem;           /* Título menor */
+            margin-bottom: 0.9rem;
             color: #0A2540;
+            font-weight: 600;
         }
         .certificate-img {
-            max-width: 260px;
+            max-width: 200px;          /* Reduzido em ~23% */
             width: 100%;
-            border-radius: 12px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
-            border: 4px solid #00ff9d;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+            border: 3px solid #00ff9d;
             transition: all 0.3s ease;
         }
         .certificate-img:hover {
-            transform: scale(1.04);
-            box-shadow: 0 15px 30px rgba(0, 255, 157, 0.35);
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 255, 157, 0.3);
         }
 
         .footer-text {
             text-align: center;
             color: #0A2540;
-            font-size: 0.85rem;
-            line-height: 1.5;
-            margin-top: 1.8rem;
+            font-size: 0.78rem;        /* Texto final menor */
+            line-height: 1.4;
         }
         .footer-text p {
-            margin-bottom: 0.4rem;
+            margin-bottom: 0.35rem;
         }
 
         @media (max-width: 768px) {
@@ -159,7 +160,8 @@
             .secondary-menu a { padding: 9px 18px; font-size: 0.95rem; }
             .explorer-wrapper iframe { height: 680px; }
             .social-icons img { width: 46px; height: 46px; }
-            .certificate-img { max-width: 210px; }
+            .certificate-img { max-width: 170px; }
+            .certificates { text-align: center; } /* Centraliza no mobile */
         }
     </style>
 </head>
@@ -194,8 +196,7 @@
             <a href="https://x.com/BrazilPfp" target="_blank" title="X / Twitter">
                 <span style="font-size: 2.4rem;">𝕏</span>
             </a>
-             </a>
-            <a href="https://github.com/BrazilNFT-Oficial-Collection" targ="_blank" title="Github">
+            <a href="https://github.com/BrazilNFT-Oficial-Collection" target="_blank" title="Github">
                 <img src="assets/git.png" alt="Perfil Github">
             </a>
             <a href="https://cos.tv/channel-vip/room/172133888776684" target="_blank" title="Sala Vip COStv">
@@ -209,8 +210,8 @@
         <!-- Certificado NFT DeFi Binance -->
         <div class="certificates">
             <h3>✅ Certificado Oficial - Curso DeFi Binance Academy</h3>
-            <img src="https://public.nftstatic.com/static/nft/res/fd401ced734341a2bcd6e7e342b213be.jpeg" 
-                 alt="Certificado NFT Curso DeFi Binance" 
+            <img src="https://public.nftstatic.com/static/nft/res/fd401ced734341a2bcd6e7e342b213be.jpeg"
+                 alt="Certificado NFT Curso DeFi Binance"
                  class="certificate-img">
         </div>
 
