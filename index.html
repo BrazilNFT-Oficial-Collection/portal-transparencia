@@ -44,13 +44,13 @@
         }
         h1 {
             text-align: center;
-            font-size: 2.1rem;     /* 30% menor */
+            font-size: 2.1rem;
             margin: 2.5rem 0 0.5rem;
         }
         .subtitle {
             text-align: center;
             color: #ffffff;
-            font-size: 1.1rem;     /* menor */
+            font-size: 1.1rem;
             margin-bottom: 2rem;
         }
         .secondary-menu {
@@ -99,7 +99,7 @@
         .social-icons {
             display: flex;
             justify-content: center;
-            gap: 2.2rem;
+            gap: 2rem;
             margin-bottom: 2.5rem;
             flex-wrap: wrap;
         }
@@ -107,40 +107,13 @@
             transition: all 0.3s;
         }
         .social-icons img {
-            width: 52px;
-            height: 52px;
+            width: 42px;     /* 20% menor */
+            height: 42px;
             object-fit: contain;
         }
         .social-icons a:hover img {
             transform: translateY(-6px);
             filter: brightness(1.3);
-        }
-
-        /* Certificate */
-        .certificates {
-            text-align: left;
-            max-width: 800px;
-            margin: 2rem auto 2.5rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid rgba(0, 0, 0, 0.08);
-        }
-        .certificates h3 {
-            font-size: 1rem;
-            margin-bottom: 0.9rem;
-            color: #0A2540;
-            font-weight: 600;
-        }
-        .certificate-img {
-            max-width: 200px;
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-            border: 3px solid #00ff9d;
-            transition: all 0.3s ease;
-        }
-        .certificate-img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 25px rgba(0, 255, 157, 0.3);
         }
 
         .footer-text {
@@ -159,9 +132,10 @@
             .secondary-menu { gap: 1rem; }
             .secondary-menu a { padding: 8px 16px; font-size: 0.95rem; }
             .explorer-wrapper iframe { height: 680px; }
-            .social-icons img { width: 46px; height: 46px; }
-            .certificate-img { max-width: 170px; }
-            .certificates { text-align: center; }
+            .social-icons img { 
+                width: 36px;     /* 20% menor também no mobile */
+                height: 36px; 
+            }
         }
     </style>
 </head>
@@ -208,13 +182,6 @@
             <a href="https://cos.tv/channel/51060419739952128/" target="_blank" title="Official Channel COStv">
                 <img src="assets/costve.png" alt="Canal COStv">
             </a>
-        </div>
-
-        <div class="certificates">
-            <h3>✅ Official Certificate - Binance DeFi Course</h3>
-            <img src="https://public.nftstatic.com/static/nft/res/fd401ced734341a2bcd6e7e342b213be.jpeg"
-                 alt="Binance DeFi Certificate"
-                 class="certificate-img">
         </div>
 
         <div class="footer-text">
