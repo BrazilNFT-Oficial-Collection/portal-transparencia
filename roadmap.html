@@ -79,10 +79,28 @@
         .roadmap-content {
             max-width: 900px;
             margin: 0 auto;
-            background: rgba(255,255,255,0.05);
-            padding: 2.5rem;
+            background: rgba(255,255,255,0.06);
+            padding: 3rem;
             border-radius: 16px;
             border: 1px solid rgba(0, 255, 157, 0.2);
+            text-align: center;
+        }
+
+        .btn-pdf {
+            background: var(--primary);
+            color: #000;
+            padding: 16px 40px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 2rem;
+            transition: all 0.3s;
+        }
+        .btn-pdf:hover {
+            transform: scale(1.05);
+            background: #00cc7a;
         }
 
         footer {
@@ -91,6 +109,36 @@
             padding: 3rem 2rem 2rem;
             margin-top: 6rem;
             border-top: 1px solid rgba(0, 255, 157, 0.3);
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 2.2rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+        .social-icons img {
+            width: 52px;
+            height: 52px;
+            object-fit: contain;
+        }
+        .certificates {
+            text-align: left;
+            max-width: 800px;
+            margin: 2rem auto 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+        }
+        .certificate-img {
+            max-width: 200px;
+            border-radius: 10px;
+            border: 3px solid #00ff9d;
+        }
+        .footer-text {
+            text-align: center;
+            color: #0A2540;
+            font-size: 0.78rem;
+            line-height: 1.4;
         }
     </style>
 </head>
@@ -112,26 +160,21 @@
         </div>
 
         <div class="roadmap-content">
-            <h2 style="text-align: center; margin-bottom: 2rem; color: var(--primary);">📍 Nosso Plano de Desenvolvimento</h2>
+            <h2 style="color: var(--primary); margin-bottom: 1.5rem;">📍 Nosso Plano de Desenvolvimento</h2>
             
-            <!-- Coloque aqui o conteúdo do seu roadmap -->
-            <p style="text-align: center; font-size: 1.2rem; line-height: 1.8;">
-                Em breve teremos o roadmap completo aqui.<br>
-                Enquanto isso, você pode baixar o PDF:
+            <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2rem;">
+                O roadmap completo está disponível para download.
             </p>
 
-            <div style="text-align: center; margin: 3rem 0;">
-                <a href="roadmap.pdf" 
-                   style="background: var(--primary); color: #000; padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block;">
-                    📥 Baixar Roadmap em PDF
-                </a>
-            </div>
+            <a href="roadmap.pdf" class="btn-pdf" target="_blank">
+                📥 Baixar Roadmap em PDF
+            </a>
         </div>
     </div>
 
-    <!-- Footer (igual aos outros) -->
+    <!-- Footer -->
     <footer>
-        <div class="social-icons" style="display: flex; justify-content: center; gap: 2.2rem; margin-bottom: 2.5rem; flex-wrap: wrap;">
+        <div class="social-icons">
             <a href="https://www.binance.com/pt-BR/square/profile/cos_investidores" target="_blank" title="Binance Square">
                 <img src="assets/Bsquare.png" alt="Binance Square">
             </a>
@@ -149,14 +192,14 @@
             </a>
         </div>
 
-        <div class="certificates" style="text-align: left; max-width: 800px; margin: 2rem auto 2.5rem;">
-            <h3 style="font-size: 1rem; margin-bottom: 0.9rem;">✅ Certificado Oficial - Curso DeFi Binance Academy</h3>
+        <div class="certificates">
+            <h3>✅ Certificado Oficial - Curso DeFi Binance Academy</h3>
             <img src="https://public.nftstatic.com/static/nft/res/fd401ced734341a2bcd6e7e342b213be.jpeg"
                  alt="Certificado NFT Curso DeFi Binance"
-                 style="max-width: 200px; border-radius: 10px; border: 3px solid #00ff9d;">
+                 class="certificate-img">
         </div>
 
-        <div class="footer-text" style="text-align: center; font-size: 0.78rem;">
+        <div class="footer-text">
             <p>&copy; 2026 Brazil NFT Official Collection • Todos os direitos reservados</p>
             <p>Transparência é o nosso compromisso com a comunidade.</p>
         </div>
