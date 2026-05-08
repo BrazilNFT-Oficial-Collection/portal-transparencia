@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal da Transparência - Brazil NFT Official Collection</title>
- 
+    <title>Transparency Portal - Brazil NFT Official Collection</title>
     <link rel="icon" href="https://github.com/BrazilNFT-Oficial-Collection.png" type="image/png">
     <style>
         :root {
@@ -45,19 +44,19 @@
         }
         h1 {
             text-align: center;
-            font-size: 3rem;
+            font-size: 2.1rem;     /* 30% menor */
             margin: 2.5rem 0 0.5rem;
         }
         .subtitle {
             text-align: center;
             color: #ffffff;
-            font-size: 1.5rem;
+            font-size: 1.1rem;     /* menor */
             margin-bottom: 2rem;
         }
         .secondary-menu {
             display: flex;
             justify-content: center;
-            gap: 2.5rem;
+            gap: 1.8rem;
             margin: 2rem 0 3rem;
             flex-wrap: wrap;
         }
@@ -65,13 +64,14 @@
             color: #ffffff;
             text-decoration: none;
             font-weight: 500;
-            padding: 10px 24px;
+            padding: 8px 20px;
             border-radius: 50px;
             transition: all 0.3s;
+            font-size: 1rem;
         }
         .secondary-menu a:hover,
         .secondary-menu a.active {
-            background: rgba(0, 255, 157, 0.2);
+            background: rgba(0, 255, 157, 0.15);
             color: #ffffff;
         }
         .explorer-wrapper {
@@ -116,7 +116,7 @@
             filter: brightness(1.3);
         }
 
-        /* Seção do Certificado */
+        /* Certificate */
         .certificates {
             text-align: left;
             max-width: 800px;
@@ -154,10 +154,10 @@
         }
 
         @media (max-width: 768px) {
-            h1 { font-size: 2.4rem; }
-            .subtitle { font-size: 1.3rem; }
+            h1 { font-size: 1.8rem; }
+            .subtitle { font-size: 1rem; }
             .secondary-menu { gap: 1rem; }
-            .secondary-menu a { padding: 9px 18px; font-size: 0.95rem; }
+            .secondary-menu a { padding: 8px 16px; font-size: 0.95rem; }
             .explorer-wrapper iframe { height: 680px; }
             .social-icons img { width: 46px; height: 46px; }
             .certificate-img { max-width: 170px; }
@@ -173,13 +173,13 @@
     </header>
 
     <div class="container">
-        <h1>Portal da Transparência</h1>
+        <h1>Transparency Portal</h1>
         <p class="subtitle">Brazil NFT Official Collection</p>
-        
+       
         <div class="secondary-menu">
-            <a href="index.html" class="active">Transparência</a>
+            <a href="index.html" class="active">Transparency</a>
             <a href="roadmap.html">Roadmap</a>
-            <a href="galeria.html">Galeria</a>
+            <a href="galeria.html">Gallery</a>
         </div>
 
         <div class="explorer-wrapper">
@@ -190,7 +190,7 @@
         </div>
     </div>
 
-    <!-- RODAPÉ -->
+    <!-- FOOTER -->
     <footer>
         <div class="social-icons">
             <a href="https://www.binance.com/pt-BR/square/profile/cos_investidores" target="_blank" title="Binance Square">
@@ -202,19 +202,24 @@
             <a href="https://github.com/BrazilNFT-Oficial-Collection" target="_blank" title="Github">
                 <img src="assets/git.png" alt="Perfil Github">
             </a>
-            <a href="https://cos.tv/channel-vip/room/172133888776684" target="_blank" title="Sala Vip COStv">
+            <a href="https://cos.tv/channel-vip/room/172133888776684" target="_blank" title="VIP Room COStv">
                 <img src="assets/salavip.png" alt="Sala Vip COStv">
             </a>
-            <a href="https://cos.tv/channel/51060419739952128/" target="_blank" title="Canal Oficial COStv">
+            <a href="https://cos.tv/channel/51060419739952128/" target="_blank" title="Official Channel COStv">
                 <img src="assets/costve.png" alt="Canal COStv">
             </a>
         </div>
 
+        <div class="certificates">
+            <h3>✅ Official Certificate - Binance DeFi Course</h3>
+            <img src="https://public.nftstatic.com/static/nft/res/fd401ced734341a2bcd6e7e342b213be.jpeg"
+                 alt="Binance DeFi Certificate"
+                 class="certificate-img">
         </div>
 
         <div class="footer-text">
-            <p>&copy; 2026 Brazil NFT Official Collection • Todos os direitos reservados</p>
-            <p>Transparência é o nosso compromisso com a comunidade.</p>
+            <p>&copy; 2026 Brazil NFT Official Collection • All rights reserved</p>
+            <p>Transparency is our commitment to the community.</p>
         </div>
     </footer>
 </body>
