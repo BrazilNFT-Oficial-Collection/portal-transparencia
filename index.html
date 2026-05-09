@@ -86,11 +86,11 @@
         }
         .explorer-wrapper iframe {
             width: 100%;
-            height: 720px;
+            height: 680px;
             border: none;
         }
 
-        /* TradingView Chart */
+        /* TradingView Chart Melhorado */
         .chart-wrapper {
             width: 100%;
             max-width: 1100px;
@@ -100,16 +100,21 @@
             overflow: hidden;
             box-shadow: 0 15px 35px rgba(0, 255, 157, 0.15);
         }
-        .chart-container {
-            height: 720px;
-            position: relative;
-        }
         .chart-title {
             text-align: center;
             padding: 1.2rem 0;
             background: #0f172a;
             font-size: 1.35rem;
             border-bottom: 1px solid #1e2937;
+        }
+        .chart-container {
+            height: 780px;           /* Aumentado para evitar corte */
+            position: relative;
+        }
+        .chart-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
 
         footer {
@@ -144,7 +149,7 @@
 
         @media (max-width: 768px) {
             .explorer-wrapper iframe, .chart-container {
-                height: 520px;
+                height: 560px;
             }
             h1 { font-size: 1.8rem; }
         }
@@ -175,11 +180,14 @@
                     title="Contentos Explorer"></iframe>
         </div>
 
-        <!-- TradingView COS Chart -->
+        <!-- TradingView Chart Salvo (g38JAhqm) -->
         <div class="chart-wrapper">
-            <div class="chart-title">Crypto Total Market Cap (CRYPTOCAP:COS)</div>
+            <div class="chart-title">Crypto Total Market Cap (CRYPTOCAP:COS) — Layout Salvo</div>
             <div class="chart-container">
-                <div id="tradingview_chart" style="height: 100%; width: 100%;"></div>
+                <iframe 
+                    src="https://www.tradingview.com/chart/g38JAhqm/?symbol=CRYPTOCAP%3ACOS&theme=dark"
+                    allowfullscreen>
+                </iframe>
             </div>
         </div>
     </div>
@@ -208,25 +216,5 @@
             <p>Transparency is our commitment to the community.</p>
         </div>
     </footer>
-
-    <!-- TradingView Script -->
-    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-    <script type="text/javascript">
-        new TradingView.widget({
-            "width": "100%",
-            "height": "100%",
-            "symbol": "CRYPTOCAP:COS",
-            "interval": "240",
-            "timezone": "Etc/UTC",
-            "theme": "dark",
-            "style": "1",
-            "locale": "pt",
-            "toolbar_bg": "#131722",
-            "enable_publishing": false,
-            "allow_symbol_change": true,
-            "save_image": true,
-            "container_id": "tradingview_chart"
-        });
-    </script>
 </body>
 </html>
