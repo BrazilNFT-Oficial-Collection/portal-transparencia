@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria da Coleção - Brazil NFT Official Collection</title>
- 
-    <link rel="icon" href="https://github.com/BrazilNFT-Oficial-Collection.png" type="image/png">
+    <link rel="icon" href="assets/favicon.png" type="image/png">
     <style>
         :root {
             --primary: #00ff9d;
@@ -32,11 +31,34 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
         .logo {
             font-size: 1.85rem;
             font-weight: bold;
             color: #ffffff;
+        }
+        .secondary-menu {
+            display: flex;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .secondary-menu a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 18px;
+            border-radius: 50px;
+            transition: all 0.3s;
+            font-size: 1rem;
+            white-space: nowrap;
+        }
+        .secondary-menu a:hover,
+        .secondary-menu a.active {
+            background: rgba(0, 255, 157, 0.15);
+            color: var(--primary);
         }
         .container {
             max-width: 1200px;
@@ -54,28 +76,6 @@
             font-size: 1.5rem;
             margin-bottom: 3rem;
         }
-
-        .secondary-menu {
-            display: flex;
-            justify-content: center;
-            gap: 2.5rem;
-            margin: 2rem 0 3rem;
-            flex-wrap: wrap;
-        }
-        .secondary-menu a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 10px 24px;
-            border-radius: 50px;
-            transition: all 0.3s;
-        }
-        .secondary-menu a:hover,
-        .secondary-menu a.active {
-            background: rgba(0, 255, 157, 0.2);
-            color: #ffffff;
-        }
-
         /* Grid da Galeria */
         .gallery-grid {
             display: grid;
@@ -114,8 +114,6 @@
             font-size: 0.9rem;
             color: #00ff9d;
         }
-
-        /* Footer */
         footer {
             background: #ffffff !important;
             color: #0A2540;
@@ -139,31 +137,20 @@
             transform: translateY(-6px);
             filter: brightness(1.3);
         }
-        .certificates {
-            text-align: left;
-            max-width: 800px;
-            margin: 2rem auto 2.5rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid rgba(0, 0, 0, 0.08);
-        }
-        .certificates h3 {
-            font-size: 1rem;
-            margin-bottom: 0.9rem;
-            color: #0A2540;
-        }
-        .certificate-img {
-            max-width: 200px;
-            border-radius: 10px;
-            border: 3px solid #00ff9d;
-        }
         .footer-text {
             text-align: center;
             color: #0A2540;
             font-size: 0.78rem;
             line-height: 1.4;
         }
-
         @media (max-width: 768px) {
+            nav {
+                justify-content: center;
+                text-align: center;
+            }
+            .secondary-menu {
+                margin-top: 1rem;
+            }
             h1 { font-size: 2.4rem; }
             .subtitle { font-size: 1.3rem; }
             .gallery-grid { gap: 1.5rem; }
@@ -175,18 +162,19 @@
     <header>
         <nav>
             <div class="logo">🇧🇷 Brazil NFT</div>
+            
+            <div class="secondary-menu">
+                <a href="index.html">Transparency</a>
+                <a href="roadmap.html">Roadmap</a>
+                <a href="galeria.html" class="active">Gallery</a>
+                <a href="tradingview.html">TradingView</a>
+            </div>
         </nav>
     </header>
 
     <div class="container">
         <h1>Galeria da Coleção</h1>
         <p class="subtitle">NFTs já adquiridos • Brazil NFT Official Collection</p>
-
-        <div class="secondary-menu">
-            <a href="index.html">Transparência</a>
-            <a href="roadmap.html">Roadmap</a>
-            <a href="galeria.html" class="active">Galeria</a>
-        </div>
 
         <div class="gallery-grid">
             <!-- NFT 1 -->
@@ -197,7 +185,6 @@
                     <p>Adquirido em: 08/05/2026</p>
                 </div>
             </div>
-
             <!-- NFT 2 -->
             <div class="nft-card">
                 <img src="https://raw2.seadn.io/ethereum/0x06012c8cf97bead5deae237070f9587f8e7a266d/42bcc80005980c79dfff9ab6a44744/7f42bcc80005980c79dfff9ab6a44744.svg" alt="CryptoKitty 2">
@@ -206,7 +193,6 @@
                     <p>Adquirido em: 07/05/2026</p>
                 </div>
             </div>
-
             <!-- NFT 3 -->
             <div class="nft-card">
                 <img src="https://public.nftstatic.com/static/nft/res/fd401ced734341a2bcd6e7e342b213be.jpeg" alt="Certificado DeFi">
@@ -237,7 +223,6 @@
                 <img src="assets/costve.png" alt="Canal COStv">
             </a>
         </div>
-
         <div class="footer-text">
             <p>&copy; 2026 Brazil NFT Official Collection • Todos os direitos reservados</p>
             <p>Transparência é o nosso compromisso com a comunidade.</p>
