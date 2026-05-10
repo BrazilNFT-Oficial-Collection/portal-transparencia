@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transparency Portal - Brazil NFT Official Collection</title>
-    <link rel="icon" href="https://github.com/BrazilNFT-Oficial-Collection.png" type="image/png">
+    <link rel="icon" href="assets/favicon.png" type="image/png"> <!-- Recomendo usar caminho local -->
     <style>
         :root {
             --primary: #00ff9d;
@@ -74,8 +74,6 @@
             background: rgba(0, 255, 157, 0.15);
             color: #ffffff;
         }
-
-        /* Explorer */
         .explorer-wrapper {
             width: 100%;
             max-width: 1100px;
@@ -89,30 +87,6 @@
             height: 680px;
             border: none;
         }
-
-        /* TradingView Centralizado */
-        .chart-wrapper {
-            width: 100%;
-            max-width: 1100px;
-            margin: 3rem auto;
-            background: #131722;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 15px 35px rgba(0, 255, 157, 0.15);
-        }
-        .chart-title {
-            text-align: center;
-            padding: 1.2rem 0;
-            background: #0f172a;
-            font-size: 1.35rem;
-            border-bottom: 1px solid #1e2937;
-        }
-        .chart-container {
-            height: 680px;
-            width: 100%;
-            position: relative;
-        }
-
         footer {
             background: #ffffff !important;
             color: #0A2540;
@@ -142,9 +116,8 @@
             font-size: 0.78rem;
             line-height: 1.4;
         }
-
         @media (max-width: 768px) {
-            .explorer-wrapper iframe, .chart-container {
+            .explorer-wrapper iframe {
                 height: 520px;
             }
         }
@@ -156,15 +129,15 @@
             <div class="logo">🇧🇷 Brazil NFT</div>
         </nav>
     </header>
-
     <div class="container">
         <h1>Transparency Portal</h1>
         <p class="subtitle">Brazil NFT Official Collection</p>
-    
+   
         <div class="secondary-menu">
             <a href="index.html" class="active">Transparency</a>
             <a href="roadmap.html">Roadmap</a>
             <a href="galeria.html">Gallery</a>
+            <a href="tradingview.html">TradingView</a>
         </div>
 
         <!-- Contentos Explorer -->
@@ -173,52 +146,6 @@
                     allowfullscreen
                     scrolling="yes"
                     title="Contentos Explorer"></iframe>
-        </div>
-
-        <!-- TradingView Centralizado -->
-        <div class="chart-wrapper">
-            <div class="chart-title">Crypto Total Market Cap (CRYPTOCAP:COS)</div>
-            <div class="chart-container">
-                <!-- TradingView Widget BEGIN -->
-                <div class="tradingview-widget-container" style="height:100%; width:100%">
-                  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px); width:100%"></div>
-                  <div class="tradingview-widget-copyright">
-                    <a href="https://www.tradingview.com/symbols/COS/?exchange=CRYPTOCAP" rel="noopener nofollow" target="_blank">
-                      <span class="blue-text">COS chart</span>
-                    </a>
-                    <span class="trademark"> by TradingView</span>
-                  </div>
-                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-                  {
-                    "autosize": true,
-                    "allow_symbol_change": true,
-                    "calendar": false,
-                    "details": false,
-                    "hide_side_toolbar": true,
-                    "hide_top_toolbar": true,
-                    "hide_legend": false,
-                    "hide_volume": true,
-                    "hotlist": false,
-                    "interval": "5",
-                    "locale": "en",
-                    "save_image": false,
-                    "style": "1",
-                    "symbol": "CRYPTOCAP:COS",
-                    "theme": "light",
-                    "timezone": "America/Sao_Paulo",
-                    "backgroundColor": "#ffffff",
-                    "gridColor": "rgba(41, 98, 255, 0.44)",
-                    "watchlist": [],
-                    "withdateranges": false,
-                    "compareSymbols": [],
-                    "studies": [],
-                    "width": 980,
-                    "height": 610
-                  }
-                  </script>
-                </div>
-                <!-- TradingView Widget END -->
-            </div>
         </div>
     </div>
 
