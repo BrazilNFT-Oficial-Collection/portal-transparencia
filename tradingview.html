@@ -31,11 +31,34 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
         .logo {
             font-size: 1.85rem;
             font-weight: bold;
             color: #ffffff;
+        }
+        .secondary-menu {
+            display: flex;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .secondary-menu a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 18px;
+            border-radius: 50px;
+            transition: all 0.3s;
+            font-size: 1rem;
+            white-space: nowrap;
+        }
+        .secondary-menu a:hover,
+        .secondary-menu a.active {
+            background: rgba(0, 255, 157, 0.15);
+            color: var(--primary);
         }
         .container {
             max-width: 1200px;
@@ -60,27 +83,6 @@
             max-width: 700px;
             margin: 0 auto 3rem;
             line-height: 1.5;
-        }
-        .secondary-menu {
-            display: flex;
-            justify-content: center;
-            gap: 1.8rem;
-            margin: 2rem 0 3rem;
-            flex-wrap: wrap;
-        }
-        .secondary-menu a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 8px 20px;
-            border-radius: 50px;
-            transition: all 0.3s;
-            font-size: 1rem;
-        }
-        .secondary-menu a:hover,
-        .secondary-menu a.active {
-            background: rgba(0, 255, 157, 0.15);
-            color: #ffffff;
         }
         .chart-wrapper {
             width: 100%;
@@ -133,6 +135,13 @@
             line-height: 1.4;
         }
         @media (max-width: 768px) {
+            nav {
+                justify-content: center;
+                text-align: center;
+            }
+            .secondary-menu {
+                margin-top: 1rem;
+            }
             .chart-container {
                 height: 560px;
             }
@@ -143,6 +152,13 @@
     <header>
         <nav>
             <div class="logo">🇧🇷 Brazil NFT</div>
+            
+            <div class="secondary-menu">
+                <a href="index.html">Transparency</a>
+                <a href="roadmap.html">Roadmap</a>
+                <a href="galeria.html">Gallery</a>
+                <a href="tradingview.html" class="active">TradingView</a>
+            </div>
         </nav>
     </header>
 
@@ -152,13 +168,6 @@
         <p class="description">
             Real-time market data and technical analysis for COS and the broader crypto market.
         </p>
-
-        <div class="secondary-menu">
-            <a href="index.html">Transparency</a>
-            <a href="roadmap.html">Roadmap</a>
-            <a href="galeria.html">Gallery</a>
-            <a href="tradingview.html" class="active">TradingView</a>
-        </div>
 
         <!-- TradingView Widget - Tema Dark -->
         <div class="chart-wrapper">
