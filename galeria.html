@@ -76,7 +76,6 @@
             font-size: 1.5rem;
             margin-bottom: 3rem;
         }
-        /* Grid da Galeria */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -114,47 +113,55 @@
             font-size: 0.9rem;
             color: #00ff9d;
         }
+        /* NOVO FOOTER */
         footer {
             background: #ffffff !important;
             color: #0A2540;
-            padding: 3rem 2rem 2rem;
+            padding: 2.5rem 2rem 2rem;
             margin-top: 5rem;
             border-top: 1px solid rgba(0, 255, 157, 0.3);
+            text-align: center;
         }
         .social-icons {
             display: flex;
             justify-content: center;
-            gap: 2.2rem;
-            margin-bottom: 2.5rem;
+            gap: 1.4rem;
+            margin-bottom: 1.8rem;
             flex-wrap: wrap;
         }
         .social-icons img {
-            width: 52px;
-            height: 52px;
+            width: 32px;
+            height: 32px;
             object-fit: contain;
+            transition: all 0.3s;
         }
-        .social-icons a:hover img {
-            transform: translateY(-6px);
+        .social-icons span {
+            font-size: 2.1rem;
+            line-height: 1;
+        }
+        .social-icons a:hover img,
+        .social-icons a:hover span {
+            transform: translateY(-5px);
             filter: brightness(1.3);
         }
         .footer-text {
-            text-align: center;
             color: #0A2540;
-            font-size: 0.78rem;
-            line-height: 1.4;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+        .footer-text p {
+            margin-bottom: 0.3rem;
         }
         @media (max-width: 768px) {
-            nav {
-                justify-content: center;
-                text-align: center;
-            }
-            .secondary-menu {
-                margin-top: 1rem;
-            }
+            nav { justify-content: center; }
+            .secondary-menu { margin-top: 1rem; }
             h1 { font-size: 2.4rem; }
             .subtitle { font-size: 1.3rem; }
             .gallery-grid { gap: 1.5rem; }
             .nft-card img { height: 220px; }
+            .social-icons { gap: 1.1rem; }
+            .social-icons img { width: 28px; height: 28px; }
+            .social-icons span { font-size: 1.9rem; }
         }
     </style>
 </head>
@@ -162,7 +169,6 @@
     <header>
         <nav>
             <div class="logo">🇧🇷 Brazil NFT</div>
-            
             <div class="secondary-menu">
                 <a href="index.html">Transparency</a>
                 <a href="roadmap.html">Roadmap</a>
@@ -204,20 +210,20 @@
         </div>
     </div>
 
-    <!-- RODAPÉ -->
+    <!-- NOVO FOOTER -->
     <footer>
         <div class="social-icons">
             <a href="https://www.binance.com/pt-BR/square/profile/cos_investidores" target="_blank" title="Binance Square">
                 <img src="assets/Bsquare.png" alt="Binance Square">
             </a>
             <a href="https://x.com/BrazilPfp" target="_blank" title="X / Twitter">
-                <span style="font-size: 2.4rem;">𝕏</span>
+                <span>𝕏</span>
             </a>
             <a href="https://github.com/BrazilNFT-Oficial-Collection" target="_blank" title="Github">
-                <img src="assets/git.png" alt="Perfil Github">
+                <img src="assets/git.png" alt="Github">
             </a>
-            <a href="https://cos.tv/channel-vip/room/172133888776684" target="_blank" title="Sala Vip COStv">
-                <img src="assets/salavip.png" alt="Sala Vip COStv">
+            <a href="https://cos.tv/channel-vip/room/172133888776684" target="_blank" title="Sala VIP COStv">
+                <img src="assets/salavip.png" alt="Sala VIP COStv">
             </a>
             <a href="https://cos.tv/channel/51060419739952128/" target="_blank" title="Canal Oficial COStv">
                 <img src="assets/costve.png" alt="Canal COStv">
