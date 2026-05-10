@@ -1,1 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradingView - Brazil NFT Official Collection</title>
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <style>
+        :root {
+            --primary: #00ff9d;
+            --dark: #0A2540;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: var(--dark);
+            color: #ffffff;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+        header {
+            background: rgba(10, 37, 64, 0.98);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(0, 255, 157, 0.25);
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.85rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.1rem;
+            margin: 2.5rem 0 0.8rem;
+        }
+        .subtitle {
+            text-align: center;
+            color: #ffffff;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        .description {
+            text-align: center;
+            color: #a0b8d0;
+            font-size: 1.05rem;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            line-height: 1.5;
+        }
+        .secondary-menu {
+            display: flex;
+            justify-content: center;
+            gap: 1.8rem;
+            margin: 2rem 0 3rem;
+            flex-wrap: wrap;
+        }
+        .secondary-menu a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 20px;
+            border-radius: 50px;
+            transition: all 0.3s;
+            font-size: 1rem;
+        }
+        .secondary-menu a:hover,
+        .secondary-menu a.active {
+            background: rgba(0, 255, 157, 0.15);
+            color: #ffffff;
+        }
+        .chart-wrapper {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #0f172a;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 255, 157, 0.15);
+        }
+        .chart-title {
+            text-align: center;
+            padding: 1.4rem 0;
+            background: #0a1324;
+            font-size: 1.4rem;
+            border-bottom: 1px solid #1e2937;
+        }
+        .chart-container {
+            height: 720px;
+            width: 100%;
+            position: relative;
+        }
+        footer {
+            background: #ffffff !important;
+            color: #0A2540;
+            padding: 3rem 2rem 2rem;
+            margin-top: 5rem;
+            border-top: 1px solid rgba(0, 255, 157, 0.3);
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+        .social-icons img {
+            width: 42px;
+            height: 42px;
+            object-fit: contain;
+        }
+        .social-icons a:hover img {
+            transform: translateY(-6px);
+            filter: brightness(1.3);
+        }
+        .footer-text {
+            text-align: center;
+            color: #0A2540;
+            font-size: 0.78rem;
+            line-height: 1.4;
+        }
+        @media (max-width: 768px) {
+            .chart-container {
+                height: 560px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🇧🇷 Brazil NFT</div>
+        </nav>
+    </header>
 
+    <div class="container">
+        <h1>TradingView</h1>
+        <p class="subtitle">Brazil NFT Official Collection</p>
+        <p class="description">
+            Real-time market data and technical analysis for COS and the broader crypto market.
+        </p>
+
+        <div class="secondary-menu">
+            <a href="index.html">Transparency</a>
+            <a href="roadmap.html">Roadmap</a>
+            <a href="galeria.html">Gallery</a>
+            <a href="tradingview.html" class="active">TradingView</a>
+        </div>
+
+        <!-- TradingView Widget - Tema Dark -->
+        <div class="chart-wrapper">
+            <div class="chart-title">CRYPTOCAP:COS — Total Market Cap Chart</div>
+            <div class="chart-container">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container" style="height:100%; width:100%">
+                  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px); width:100%"></div>
+                  <div class="tradingview-widget-copyright">
+                    <a href="https://www.tradingview.com/symbols/COS/?exchange=CRYPTOCAP" rel="noopener nofollow" target="_blank">
+                      <span class="blue-text">COS chart</span>
+                    </a>
+                    <span class="trademark"> by TradingView</span>
+                  </div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                  {
+                    "autosize": true,
+                    "symbol": "CRYPTOCAP:COS",
+                    "interval": "5",
+                    "timezone": "America/Sao_Paulo",
+                    "theme": "dark",
+                    "style": "1",
+                    "locale": "en",
+                    "backgroundColor": "#0f172a",
+                    "gridColor": "rgba(0, 255, 157, 0.08)",
+                    "hide_top_toolbar": false,
+                    "hide_legend": false,
+                    "allow_symbol_change": true,
+                    "save_image": true,
+                    "calendar": false,
+                    "hide_volume": false,
+                    "support_host": "https://www.tradingview.com"
+                  }
+                  </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.binance.com/pt-BR/square/profile/cos_investidores" target="_blank" title="Binance Square">
+                <img src="assets/Bsquare.png" alt="Binance Square">
+            </a>
+            <a href="https://x.com/BrazilPfp" target="_blank" title="X / Twitter">
+                <span style="font-size: 2.4rem;">𝕏</span>
+            </a>
+            <a href="https://github.com/BrazilNFT-Oficial-Collection" target="_blank" title="Github">
+                <img src="assets/git.png" alt="Perfil Github">
+            </a>
+            <a href="https://cos.tv/channel-vip/room/172133888776684" target="_blank" title="VIP Room COStv">
+                <img src="assets/salavip.png" alt="Sala Vip COStv">
+            </a>
+            <a href="https://cos.tv/channel/51060419739952128/" target="_blank" title="Official Channel COStv">
+                <img src="assets/costve.png" alt="Canal COStv">
+            </a>
+        </div>
+        <div class="footer-text">
+            <p>&copy; 2026 Brazil NFT Official Collection • All rights reserved</p>
+            <p>Transparency is our commitment to the community.</p>
+        </div>
+    </footer>
+</body>
+</html>
