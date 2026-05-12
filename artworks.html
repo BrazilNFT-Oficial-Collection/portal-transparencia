@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artworks - Brazil NFT Official Collection</title>
-    
-    <link rel="icon" href="https://github.com/BrazilNFT-Oficial-Collection.png" type="image/png">
+    <link rel="icon" href="assets/favicon.png" type="image/png">
 
     <style>
         :root {
@@ -33,11 +32,33 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
         .logo {
             font-size: 1.85rem;
             font-weight: bold;
             color: #ffffff;
+        }
+        .main-menu {
+            display: flex;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .main-menu a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 18px;
+            border-radius: 50px;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+        .main-menu a:hover,
+        .main-menu a.active {
+            background: rgba(0, 255, 157, 0.2);
+            color: var(--primary);
         }
 
         .container {
@@ -55,27 +76,6 @@
             color: var(--primary);
             font-size: 1.5rem;
             margin-bottom: 3rem;
-        }
-
-        .secondary-menu {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin: 2rem 0 3rem;
-            flex-wrap: wrap;
-        }
-        .secondary-menu a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 10px 24px;
-            border-radius: 50px;
-            transition: all 0.3s;
-        }
-        .secondary-menu a:hover,
-        .secondary-menu a.active {
-            background: rgba(0, 255, 157, 0.2);
-            color: #ffffff;
         }
 
         .gallery {
@@ -96,11 +96,11 @@
         }
         .art-card img {
             width: 100%;
-            height: auto;           /* Mudança principal */
+            height: auto;
             max-height: 380px;
-            object-fit: contain;    /* Mostra a imagem completa */
+            object-fit: contain;
             background: #0A2540;
-            padding: 10px;
+            padding: 15px;
         }
         .art-info {
             padding: 1.2rem;
@@ -112,22 +112,43 @@
         }
 
         footer {
-            background: #081f33;
+            background: #ffffff;
+            color: #0A2540;
             padding: 3rem 2rem 2rem;
             margin-top: 5rem;
-            border-top: 1px solid rgba(0, 255, 157, 0.2);
+            border-top: 1px solid rgba(0, 255, 157, 0.3);
+            text-align: center;
         }
         .social-icons {
             display: flex;
             justify-content: center;
-            gap: 2.2rem;
-            margin-bottom: 2rem;
+            gap: 1.6rem;
+            margin-bottom: 1.8rem;
             flex-wrap: wrap;
         }
         .social-icons img {
-            width: 48px;
-            height: 48px;
+            width: 38px;
+            height: 38px;
             object-fit: contain;
+        }
+        .social-icons span {
+            font-size: 2.3rem;
+        }
+        .social-icons a:hover img,
+        .social-icons a:hover span {
+            transform: translateY(-5px);
+        }
+        .footer-text {
+            color: #0A2540;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.4rem; }
+            .main-menu a { padding: 8px 14px; font-size: 0.95rem; }
+            .art-card img { max-height: 320px; }
         }
     </style>
 </head>
@@ -135,18 +156,19 @@
     <header>
         <nav>
             <div class="logo">🇧🇷 Brazil NFT</div>
+            <div class="main-menu">
+                <a href="index.html">Transparência</a>
+                <a href="roadmap.html">Roadmap</a>
+                <a href="artworks.html" class="active">Artworks</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="tradingview.html">TradingView</a>
+            </div>
         </nav>
     </header>
 
     <div class="container">
         <h1>Artworks</h1>
         <p class="subtitle">Brazil NFT Official Collection</p>
-
-        <div class="secondary-menu">
-            <a href="index.html">Transparência</a>
-            <a href="roadmap.html">Roadmap</a>
-            <a href="artworks.html" class="active">Artworks</a>
-        </div>
 
         <div class="gallery">
             <div class="art-card">
@@ -184,16 +206,15 @@
 
     <footer>
         <div class="social-icons">
-            <a href="https://www.binance.com/pt-BR/square/profile/cos_investidores" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Binance-BNB-Icon-Logo.wine.svg" alt="Binance">
-            </a>
-            <a href="https://x.com/BrazilPfp" target="_blank"><span style="font-size: 2.2rem;">𝕏</span></a>
-            <a href="https://cos.tv/channel-vip/room/172133888776684" target="_blank">
-                <img src="assets/salavip.png" alt="Sala Vip">
-            </a>
-            <a href="https://cos.tv/channel/51060419739952128/" target="_blank">
-                <img src="https://play-lh.googleusercontent.com/w-YarljHAryHAiqPlND6cwr5dtLw1tUdB8cg_7Vo05iM9WTkyx-oVL4hw_2xeSFor6Q" alt="COStv">
-            </a>
+            <a href="https://www.binance.com/pt-BR/square/profile/cos_investidores" target="_blank" title="Binance Square"><img src="assets/Bsquare.png" alt="Binance Square"></a>
+            <a href="https://x.com/BrazilPfp" target="_blank" title="X / Twitter"><span>𝕏</span></a>
+            <a href="https://github.com/BrazilNFT-Oficial-Collection" target="_blank" title="Github"><img src="assets/git.png" alt="Github"></a>
+            <a href="https://cos.tv/channel-vip/room/172133888776684" target="_blank" title="Sala VIP COStv"><img src="assets/salavip.png" alt="Sala VIP"></a>
+            <a href="https://cos.tv/channel/51060419739952128/" target="_blank" title="Canal Oficial COStv"><img src="assets/costve.png" alt="Canal COStv"></a>
+        </div>
+        <div class="footer-text">
+            <p>&copy; 2026 Brazil NFT Official Collection • Todos os direitos reservados</p>
+            <p>Transparência é o nosso compromisso com a comunidade.</p>
         </div>
     </footer>
 </body>
