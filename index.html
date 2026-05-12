@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal da Transparência - Brazil NFT Official Collection</title>
-    <link rel="icon" href="assets/favicon/favicon.png" type="image/png">
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+
+    <!-- Google Analytics - GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXPNEPBX0X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ZXPNEPBX0X');
+    </script>
 
     <style>
         :root {
@@ -42,7 +51,7 @@
         }
         .main-menu {
             display: flex;
-            gap: 1rem;
+            gap: 0.8rem;
             flex-wrap: wrap;
             justify-content: center;
         }
@@ -107,9 +116,6 @@
             margin-bottom: 1.8rem;
             flex-wrap: wrap;
         }
-        .social-icons img, .social-icons span {
-            transition: all 0.3s;
-        }
         .social-icons img {
             width: 38px;
             height: 38px;
@@ -121,6 +127,11 @@
         .social-icons a:hover img,
         .social-icons a:hover span {
             transform: translateY(-5px);
+        }
+        .footer-text {
+            color: #0A2540;
+            font-size: 0.95rem;
+            line-height: 1.6;
         }
 
         @media (max-width: 768px) {
@@ -158,21 +169,11 @@
 
     <footer>
         <div class="social-icons">
-            <a href="https://www.binance.com/pt-BR/square/profile/cos_investidores" target="_blank" title="Binance Square">
-                <img src="assets/Bsquare.png" alt="Binance Square">
-            </a>
-            <a href="https://x.com/BrazilPfp" target="_blank" title="X / Twitter">
-                <span>𝕏</span>
-            </a>
-            <a href="https://github.com/BrazilNFT-Oficial-Collection" target="_blank" title="Github">
-                <img src="assets/git.png" alt="Github">
-            </a>
-            <a href="https://cos.tv/channel-vip/room/172133888776684" target="_blank" title="Sala VIP COStv">
-                <img src="assets/salavip.png" alt="Sala VIP">
-            </a>
-            <a href="https://cos.tv/channel/51060419739952128/" target="_blank" title="Canal Oficial COStv">
-                <img src="assets/costve.png" alt="Canal COStv">
-            </a>
+            <a href="https://www.binance.com/pt-BR/square/profile/cos_investidores" target="_blank" title="Binance Square"><img src="assets/Bsquare.png" alt="Binance Square"></a>
+            <a href="https://x.com/BrazilPfp" target="_blank" title="X / Twitter"><span>𝕏</span></a>
+            <a href="https://github.com/BrazilNFT-Oficial-Collection" target="_blank" title="Github"><img src="assets/git.png" alt="Github"></a>
+            <a href="https://cos.tv/channel-vip/room/172133888776684" target="_blank" title="Sala VIP COStv"><img src="assets/salavip.png" alt="Sala VIP"></a>
+            <a href="https://cos.tv/channel/51060419739952128/" target="_blank" title="Canal Oficial COStv"><img src="assets/costve.png" alt="Canal COStv"></a>
         </div>
         <div class="footer-text">
             <p>&copy; 2026 Brazil NFT Official Collection • Todos os direitos reservados</p>
