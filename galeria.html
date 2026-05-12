@@ -6,6 +6,15 @@
     <title>Galeria da Coleção - Brazil NFT Official Collection</title>
     <link rel="icon" href="assets/favicon.png" type="image/png">
 
+    <!-- Google Analytics - GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXPNEPBX0X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ZXPNEPBX0X');
+    </script>
+
     <style>
         :root {
             --primary: #00ff9d;
@@ -142,10 +151,14 @@
         .social-icons a:hover span {
             transform: translateY(-5px);
         }
+        .footer-text {
+            color: #0A2540;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
 
         @media (max-width: 768px) {
             h1 { font-size: 2.4rem; }
-            .subtitle { font-size: 1.3rem; }
             .gallery-grid { gap: 1.5rem; }
             .nft-card img { height: 240px; }
             .main-menu a { padding: 8px 14px; font-size: 0.95rem; }
