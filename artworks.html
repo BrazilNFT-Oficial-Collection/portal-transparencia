@@ -96,8 +96,11 @@
         }
         .art-card img {
             width: 100%;
-            height: 340px;
-            object-fit: cover;
+            height: auto;           /* Mudança principal */
+            max-height: 380px;
+            object-fit: contain;    /* Mostra a imagem completa */
+            background: #0A2540;
+            padding: 10px;
         }
         .art-info {
             padding: 1.2rem;
