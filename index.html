@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transparency Portal - Brazil NFT Official Collection</title>
+    <title>Portal da Transparência - Brazil NFT Official Collection</title>
     <link rel="icon" href="assets/favicon/favicon.png" type="image/png">
+
     <style>
         :root {
             --primary: #00ff9d;
@@ -39,27 +40,27 @@
             font-weight: bold;
             color: #ffffff;
         }
-        .secondary-menu {
+        .main-menu {
             display: flex;
-            gap: 0.8rem;
+            gap: 1rem;
             flex-wrap: wrap;
             justify-content: center;
         }
-        .secondary-menu a {
+        .main-menu a {
             color: #ffffff;
             text-decoration: none;
             font-weight: 500;
-            padding: 8px 14px;
+            padding: 10px 18px;
             border-radius: 50px;
             transition: all 0.3s;
-            font-size: 0.98rem;
             white-space: nowrap;
         }
-        .secondary-menu a:hover,
-        .secondary-menu a.active {
-            background: rgba(0, 255, 157, 0.15);
+        .main-menu a:hover,
+        .main-menu a.active {
+            background: rgba(0, 255, 157, 0.2);
             color: var(--primary);
         }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -67,15 +68,16 @@
         }
         h1 {
             text-align: center;
-            font-size: 2.1rem;
+            font-size: 2.8rem;
             margin: 2.5rem 0 0.5rem;
         }
         .subtitle {
             text-align: center;
-            color: #ffffff;
-            font-size: 1.1rem;
+            color: var(--primary);
+            font-size: 1.4rem;
             margin-bottom: 2rem;
         }
+
         .explorer-wrapper {
             width: 100%;
             max-width: 1100px;
@@ -89,10 +91,11 @@
             height: 680px;
             border: none;
         }
+
         footer {
-            background: #ffffff !important;
+            background: #ffffff;
             color: #0A2540;
-            padding: 2.5rem 2rem 2rem;
+            padding: 3rem 2rem 2rem;
             margin-top: 5rem;
             border-top: 1px solid rgba(0, 255, 157, 0.3);
             text-align: center;
@@ -100,59 +103,30 @@
         .social-icons {
             display: flex;
             justify-content: center;
-            gap: 1.4rem;
+            gap: 1.6rem;
             margin-bottom: 1.8rem;
             flex-wrap: wrap;
         }
-        .social-icons img {
-            width: 32px;
-            height: 32px;
-            object-fit: contain;
+        .social-icons img, .social-icons span {
             transition: all 0.3s;
         }
+        .social-icons img {
+            width: 38px;
+            height: 38px;
+            object-fit: contain;
+        }
         .social-icons span {
-            font-size: 2.1rem;
-            line-height: 1;
+            font-size: 2.3rem;
         }
         .social-icons a:hover img,
         .social-icons a:hover span {
             transform: translateY(-5px);
-            filter: brightness(1.3);
-        }
-        .footer-text {
-            color: #0A2540;
-            font-size: 0.85rem;
-            line-height: 1.5;
-        }
-        .footer-text p {
-            margin-bottom: 0.3rem;
         }
 
-        /* ==================== MOBILE MENU ==================== */
         @media (max-width: 768px) {
-            nav {
-                padding: 1rem 1.2rem;
-                justify-content: center;
-                flex-direction: column;
-                gap: 1rem;
-            }
-            .logo { font-size: 1.7rem; }
-            .secondary-menu {
-                gap: 0.6rem;
-                width: 100%;
-                justify-content: center;
-            }
-            .secondary-menu a {
-                font-size: 0.92rem;
-                padding: 7px 12px;
-                flex: 1 1 auto;
-                text-align: center;
-                min-width: 110px;
-            }
+            h1 { font-size: 2.3rem; }
             .explorer-wrapper iframe { height: 520px; }
-            .social-icons { gap: 1.1rem; }
-            .social-icons img { width: 28px; height: 28px; }
-            .social-icons span { font-size: 1.9rem; }
+            .main-menu a { padding: 8px 14px; font-size: 0.95rem; }
         }
     </style>
 </head>
@@ -160,31 +134,45 @@
     <header>
         <nav>
             <div class="logo">🇧🇷 Brazil NFT</div>
-            <div class="secondary-menu">
-                <a href="index.html" class="active">Transparency</a>
+            <div class="main-menu">
+                <a href="index.html" class="active">Transparência</a>
                 <a href="roadmap.html">Roadmap</a>
-                <a href="galeria.html">Gallery</a>
+                <a href="artworks.html">Artworks</a>
+                <a href="galeria.html">Galeria</a>
                 <a href="tradingview.html">TradingView</a>
             </div>
         </nav>
     </header>
 
     <div class="container">
-        <h1>Transparency Portal</h1>
+        <h1>Portal da Transparência</h1>
         <p class="subtitle">Brazil NFT Official Collection</p>
-
+        
         <div class="explorer-wrapper">
-            <iframe src="https://explorer.contentos.io/#/user-relevant/vulkan" allowfullscreen scrolling="yes" title="Contentos Explorer"></iframe>
+            <iframe src="https://explorer.contentos.io/#/user-relevant/vulkan" 
+                    allowfullscreen 
+                    scrolling="yes" 
+                    title="Contentos Explorer"></iframe>
         </div>
     </div>
 
     <footer>
         <div class="social-icons">
-            <a href="https://www.binance.com/pt-BR/square/profile/cos_investidores" target="_blank" title="Binance Square"><img src="assets/Bsquare.png" alt="Binance Square"></a>
-            <a href="https://x.com/BrazilPfp" target="_blank" title="X / Twitter"><span>𝕏</span></a>
-            <a href="https://github.com/BrazilNFT-Oficial-Collection" target="_blank" title="Github"><img src="assets/git.png" alt="Github"></a>
-            <a href="https://cos.tv/channel-vip/room/172133888776684" target="_blank" title="Sala VIP COStv"><img src="assets/salavip.png" alt="Sala VIP"></a>
-            <a href="https://cos.tv/channel/51060419739952128/" target="_blank" title="Canal Oficial COStv"><img src="assets/costve.png" alt="Canal COStv"></a>
+            <a href="https://www.binance.com/pt-BR/square/profile/cos_investidores" target="_blank" title="Binance Square">
+                <img src="assets/Bsquare.png" alt="Binance Square">
+            </a>
+            <a href="https://x.com/BrazilPfp" target="_blank" title="X / Twitter">
+                <span>𝕏</span>
+            </a>
+            <a href="https://github.com/BrazilNFT-Oficial-Collection" target="_blank" title="Github">
+                <img src="assets/git.png" alt="Github">
+            </a>
+            <a href="https://cos.tv/channel-vip/room/172133888776684" target="_blank" title="Sala VIP COStv">
+                <img src="assets/salavip.png" alt="Sala VIP">
+            </a>
+            <a href="https://cos.tv/channel/51060419739952128/" target="_blank" title="Canal Oficial COStv">
+                <img src="assets/costve.png" alt="Canal COStv">
+            </a>
         </div>
         <div class="footer-text">
             <p>&copy; 2026 Brazil NFT Official Collection • Todos os direitos reservados</p>
